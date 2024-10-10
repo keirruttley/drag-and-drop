@@ -15,7 +15,11 @@ a {
   text-decoration: underline;
 }
 
-.clickable {
-  user-select: none;
+#my-button {
+  /* all: unset; */
+  padding: 5px;
+  background-color: #ff0084;
+  border-radius: 4px;
   cursor: pointer;
+  color: white;
 }
