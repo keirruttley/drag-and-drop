@@ -57,6 +57,9 @@ function onDrop(event) {
 
 for (object of draggableObjects) {
   object.ondragstart = onDragStart;
+  object.ondragover = onDragOver;
+  object.ondrop = onDrop;
 }
-dropzone.addEventListener("dragover", onDragOver, false);
-dropzone.addEventListener("drop", onDrop, false);
+
+dropzone.ondragover = onDragOver;
+dropzone.ondrop = onDrop;
