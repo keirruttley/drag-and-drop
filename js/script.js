@@ -1,5 +1,8 @@
-document.getElementById("my-button").addEventListener("click", clickFunction);
+const myButton = document.getElementById("my-button");
+const myParagraph = document.getElementById("my-paragraph");
+
+myButton.onclick = clickFunction;
 
 function clickFunction() {
-  document.getElementById("my-paragraph").innerHTML = "My new paragraph";
+  myParagraph.innerHTML = "My new paragraph";
 }
