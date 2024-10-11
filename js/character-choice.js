@@ -4,8 +4,6 @@ const button = document.getElementById("my-button");
 const submitButton = document.getElementById("submit-button");
 const inputField = document.getElementById("character-input");
 
-submitButton.onclick
-
 
 const imageOne = {
   src: "assets/characters/bulbasaur.avif",
