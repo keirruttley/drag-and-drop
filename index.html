@@ -6,6 +6,7 @@
 
     <!-- script link -->
     <script src="js/script.js" defer></script>
+    <script src="js/dragdrop.js" defer></script>
 
     <!-- style file -->
     <link rel="stylesheet" href="./style/base.css" />
@@ -15,13 +16,23 @@
     <title>HTML JavaScript</title>
   </head>
   <body>
+    <img
+      draggable="true"
+      id="complement-one"
+      src="assets/complements/hat.webp"
+      alt="A hat"
+    />
     <!-- main div - full width and full height -->
     <div class="container width-full height-full">
       <!-- inner div - floating in middle of webpage -->
       <div
         class="container flex-column width-half height-500px bg-marine_blue text-white"
       >
-        <img id="character-img" src="assets/chikorita.jpeg" alt="Initial Pokemon Chikorita" />
+        <img
+          id="character-img"
+          src="assets/chikorita.jpeg"
+          alt="Initial Pokemon Chikorita"
+        />
         <!-- some text -->
         <p id="my-paragraph">I am a paragraph</p>
 
