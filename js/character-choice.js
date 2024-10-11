@@ -1,6 +1,11 @@
 const image = document.getElementById("character");
 const characterName = document.getElementById("character-name");
 const button = document.getElementById("my-button");
+const submitButton = document.getElementById("submit-button");
+const inputField = document.getElementById("character-input");
+
+submitButton.onclick
+
 
 const imageOne = {
   src: "assets/characters/bulbasaur.avif",
@@ -48,4 +53,9 @@ function onclick() {
   }
 }
 
+function onSubmitButton() {
+  characterName.innerHTML = inputField.value;
+}
+
 button.onclick = onclick;
+submitButton.onclick = onSubmitButton;
