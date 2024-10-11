@@ -1,10 +1,24 @@
 const image = document.getElementById("character");
-const paragraph = document.getElementById("my-paragraph");
+const characterName = document.getElementById("character-name");
 const button = document.getElementById("my-button");
 
-const imageOne = "assets/characters/bulbasaur.avif";
-const imageTwo = "assets/characters/charmander.avif";
-const imageThree = "assets/characters/squirtle.avif";
+const imageOne = {
+  src: "assets/characters/bulbasaur.avif",
+  alt: "pokemon Bulbasaur",
+  defaultName: "Bulbasaur",
+};
+
+const imageTwo = {
+  src: "assets/characters/charmander.avif",
+  alt: "pokemon Charmander",
+  defaultName: "Charmander",
+};
+
+const imageThree = {
+  src: "assets/characters/squirtle.avif",
+  alt: "pokemon Squirtle",
+  defaultName: "Squirtle",
+};
 
 function changeText() {
   paragraph.innerHTML = "New Text";
@@ -17,14 +31,20 @@ function onclick() {
   index = index + 1;
 
   if (index == 1) {
-    image.src = imageOne;
+    image.src = imageOne.src;
+    image.alt = imageOne.alt;
+    characterName.innerHTML = imageOne.defaultName;
   }
   if (index == 2) {
-    image.src = imageTwo;
+    image.src = imageTwo.src;
+    image.alt = imageTwo.alt;
+    characterName.innerHTML = imageTwo.defaultName;
   }
   if (index == 3) {
     index = 0;
-    image.src = imageThree;
+    image.src = imageThree.src;
+    image.alt = imageThree.alt;
+    characterName.innerHTML = imageThree.defaultName;
   }
 }
 
