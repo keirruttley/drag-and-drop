@@ -13,4 +13,14 @@ In this workshop we learnt about [JavaScript](https://vle.norwichuni.ac.uk/plugi
 3. From GitHub Desktop, click the button "Open In Visual Studio Code"
 4. Create a new HTML file, a new `styles.css` file, and link it to the HTML. If you struggle with this step, review [HTML & CSS workshop](https://github.com/DianaVallverdu-NUA/BSC1a-HTML)
 5. Create [this diagram](https://miro.com/app/board/uXjVLUfEZKc=/?moveToWidget=3458764602927451353&cot=14) with (minimmum) given styles.
-6. 
+6. Your website you should similar [to this one](https://miro.com/app/board/uXjVLUfEZKc=/?moveToWidget=3458764602928304955&cot=14)
+7. Find three character images and save them in an assets subfolder.
+8. In your image Element, add a `src` attribute pointing to one of those images, and an `alt` attribute explaining what the image displays.
+
+### Linking JavaScript with HTML
+
+1. Create a new subfolder named `js` and, inside said subfolder, a new file named `script.js`
+2. In your html file, add the following line in the `<head>` element:
+3. ```JavaScript
+<script src="js/character-choice.js" defer></script>
+   ```
