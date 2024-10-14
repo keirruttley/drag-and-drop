@@ -1,5 +1,5 @@
 // define sources for each character choice
-const imageOne = "assets/chikorita.jpeg";
+const imageOne = "assets/chikorita.png";
 const imageTwo = "assets/cyndaquil.png";
 const imageThree = "assets/totodile.png";
 
