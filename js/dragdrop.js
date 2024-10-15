@@ -15,4 +15,4 @@ function onDragStart() {
 
 dropZone.ondrop = onDrop;
 dropZone.ondragover = onDragOver;
-fancyHat.ondragstart = onDragStart;
+energySword.ondragstart = onDragStart;
