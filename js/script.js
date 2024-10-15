@@ -1,19 +1,12 @@
 // define sources for each character choice
-const imageOne = "assets/arbiter.webp";
-const imageTwo = "assets/cortana.png";
-const imageThree = "assets/master_chief.png";
-
+const imageSources = ["assets/arbiter.webp", "assets/cortana.png", "assets/master_chief.png"];
 
 // define altenative text for each character choice
-const altTextOne = "Initial Halo arbiter";
-const altTextTwo = "Initial Halo cortana";
-const altTextThree = "Initial Halo masterchief";
+
+const altSources = ["Initial Halo arbiter","Initial Halo cortana","Initial Halo masterchief" ];
 
 // define text for paragraph for each character choice
-const characterNameOne = "Arbiter";
-const characterNameTwo = "Cortana";
-const characterNameThree = "Masterchief";
-
+const characterSource = ["Arbiter", "Cortana", "Masterchief"];
 
 // define HTML Element constants
 const myButton = document.getElementById("my-button");
@@ -47,25 +40,25 @@ function clickFunction() {
   // find image related to specific character counter
   console.log("Testing if character counter is one");
   if (characterCounter === 1) {
-    characterImage.src = imageOne;
-    characterImage.alt = altTextOne;
-    myParagraph.innerHTML = characterNameOne;
+    characterImage.src = imageSources [0];
+    characterImage.alt = altSources [0];
+    myParagraph.innerHTML = characterSource [0];
     return;
   }
 
   console.log("Testing if character counter is two");
   if (characterCounter === 2) {
-    characterImage.src = imageTwo;
-    characterImage.alt = altTextTwo;
-    myParagraph.innerHTML = characterNameTwo;
+    characterImage.src = imageSources [1];
+    characterImage.alt = altSources [1];
+    myParagraph.innerHTML = characterSource [1];
     return;
   }
 
   console.log("Testing if character counter is three");
   if (characterCounter === 3) {
-    characterImage.src = imageThree;
-    characterImage.alt = altTextThree;
-    myParagraph.innerHTML = characterNameThree;
+    characterImage.src = imageSources [2];
+    characterImage.alt = altSources [2];
+    myParagraph.innerHTML = characterSource [2];
     return;
   }
 
