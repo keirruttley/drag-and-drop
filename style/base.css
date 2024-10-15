@@ -41,3 +41,8 @@ a {
   cursor: pointer;
   color: white;
 }
+
+#complement-one {
+  /* if we dont have as absolute it wont move postition  */
+  position: absolute;
+}
