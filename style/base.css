@@ -15,7 +15,25 @@ a {
   text-decoration: underline;
 }
 
-#my-button {
+#character-button {
+  /* all: unset; */
+  padding: 5px;
+  background-color: #ff0084;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+#button-change-name {
+  /* all: unset; */
+  padding: 5px;
+  background-color: #ff0084;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+#name-change-input {
   /* all: unset; */
   padding: 5px;
   background-color: #ff0084;
