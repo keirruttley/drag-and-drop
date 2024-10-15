@@ -1,7 +1,19 @@
 // define sources for each character choice
-const imageOne = "assets/chikorita.png";
-const imageTwo = "assets/cyndaquil.png";
-const imageThree = "assets/totodile.png";
+const imageOne = "assets/arbiter.webp";
+const imageTwo = "assets/cortana.png";
+const imageThree = "assets/master_chief.png";
+
+
+// define altenative text for each character choice
+const altTextOne = "Initial Halo arbiter";
+const altTextTwo = "Initial Halo cortana";
+const altTextThree = "Initial Halo masterchief";
+
+// define text for paragraph for each character choice
+const characterNameOne = "Arbiter";
+const characterNameTwo = "Cortana";
+const characterNameThree = "Masterchief";
+
 
 // define HTML Element constants
 const myButton = document.getElementById("my-button");
@@ -19,6 +31,8 @@ let characterCounter = 1;
 function clickFunction() {
   console.log("============== NEW TESTING STARTED ==============");
 
+
+
   // update character counter
   characterCounter = characterCounter + 1;
 
@@ -34,18 +48,24 @@ function clickFunction() {
   console.log("Testing if character counter is one");
   if (characterCounter === 1) {
     characterImage.src = imageOne;
+    characterImage.alt = altTextOne;
+    myParagraph.innerHTML = characterNameOne;
     return;
   }
 
   console.log("Testing if character counter is two");
   if (characterCounter === 2) {
     characterImage.src = imageTwo;
+    characterImage.alt = altTextTwo;
+    myParagraph.innerHTML = characterNameTwo;
     return;
   }
 
   console.log("Testing if character counter is three");
   if (characterCounter === 3) {
     characterImage.src = imageThree;
+    characterImage.alt = altTextThree;
+    myParagraph.innerHTML = characterNameThree;
     return;
   }
 
